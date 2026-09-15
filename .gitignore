@@ -14,9 +14,6 @@ flowchart.jpg
 *.jpg
 *.jpeg
 
-# folder cadangan di lokal (Jangan dipush) 
-ISP_Monitoring sebelum git/
-
 .vscode/
 .idea/
 .DS_Store
