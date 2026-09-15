@@ -1,0 +1,23 @@
+config.py
+
+*.db
+*.sqlite
+*.sqlite3
+*.json
+*.bak
+*.log
+__pycache__/
+
+logo_biznet.png
+flowchart.jpg
+*.png
+*.jpg
+*.jpeg
+
+# folder cadangan di lokal (Jangan dipush) 
+ISP_Monitoring sebelum git/
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
