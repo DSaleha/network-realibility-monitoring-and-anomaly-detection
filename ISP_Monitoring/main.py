@@ -51,7 +51,7 @@ def main():
             else:
                 fw_ok, fw_ms = ping_check.cek_koneksi(config.TARGETS['FIREWALL'])
                 if not fw_ok:
-                    final_status, interpretasi = "INTERNET DOWN", "Gangguan Firewall SoftBank"
+                    final_status, interpretasi = "INTERNET DOWN", "Gangguan Firewall"
                     tindakan = "Cek kabel Firewall Softbank."
                     latency_val = (r1_ms + r2_ms) / 2
                 else:
@@ -77,7 +77,7 @@ def main():
                         else:
                             ping_spike_counter = 0
                             if not check_dns(config.TARGETS['WEBSITE']):
-                                final_status, interpretasi = "INTERNET DEGRADED", "Tidak Bisa Akses Web Jakarta Mori"
+                                final_status, interpretasi = "INTERNET DEGRADED", "Akses Web Perusahaan Bermasalah"
                                 tindakan = "Cek Web Jakarta Mori."
                                 latency_val = net_ms
                             else:
